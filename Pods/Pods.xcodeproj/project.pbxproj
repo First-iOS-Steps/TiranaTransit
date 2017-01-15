@@ -1,0 +1,909 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		049C46B00A1B51448DF2B2862170EF13 /* STPToken.m in Sources */ = {isa = PBXBuildFile; fileRef = B170370332B13AFF0DB385469FDBF4DB /* STPToken.m */; };
+		04A416BF54F937DAE3D19FE50DA72202 /* UIButton+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 455B0FB7B202BD0979A996A4DBF10D10 /* UIButton+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0659C55D67614156ACE73EF681E30DC7 /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = C0E0E10B6EB2DFFDCE181E7655B904AF /* UIRefreshControl+AFNetworking.m */; };
+		0B9C32D6CB6A353C7A0EB82EA183B5D1 /* STPStrictURLProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 61A6037BBF15774DD73CCD3F80566749 /* STPStrictURLProtocol.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0E4FD75ECCFD6A179057653D9BA711CD /* AFURLRequestSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = 95FB06EF6ADD867EFA4A68F7997D72DA /* AFURLRequestSerialization.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1050F5E599DEA3C0FA7990B9C56E4073 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A19DF616941A51576DD057A9FD8F4AD8 /* Security.framework */; };
+		1276F92A5CA6DEE3EA2726A218FECE14 /* STPCheckoutInternalUIWebViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = F16D6E258C16145D1E80C91DDA05B522 /* STPCheckoutInternalUIWebViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		136FB41CEB8D026BA1B0E0C514CD90F7 /* AFURLResponseSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E64976FA5B79FB7038927ABF5CE5200 /* AFURLResponseSerialization.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1891A697819F5B1F0040DB479B87D65F /* STPCheckoutOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = E12C09AE461B119C6DA53920E9ED856D /* STPCheckoutOptions.m */; };
+		2000D39AC63C7AB1198B49A90DDF2B8B /* STPCheckoutWebViewAdapter.h in Headers */ = {isa = PBXBuildFile; fileRef = 62F80A9E090BFB4B4068312DEB67E649 /* STPCheckoutWebViewAdapter.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		205F51216177E22CD1AE443745B8A119 /* AFNetworking-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B96A6AA1CCB825B06BC60B85DB0CAB /* AFNetworking-dummy.m */; };
+		21652DBF20FEBFAB5417A8F78CF8022F /* StripeError.h in Headers */ = {isa = PBXBuildFile; fileRef = 8705A4050BF501610328E995F5308AB9 /* StripeError.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		23F5B559815FF24B03A7D5D76F19E740 /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = ED70D403D7BE7C7305FA8671A0B8DD6E /* AFURLConnectionOperation.m */; };
+		263D08D54C23AAE447AC8A0E6BD02B39 /* UIKit+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 796460016A523525C6CC8D28588B2A12 /* UIKit+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		270D0D7DCF78170B1F481DDF511C07D6 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C3F234CC1E12834BDD66F94453EED78 /* AFURLResponseSerialization.m */; };
+		27AFE404AA450432596D55D44B871E62 /* UIProgressView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FA89958357291BC17A551C24751B745 /* UIProgressView+AFNetworking.m */; };
+		2A07D21E977D44EC8285390D7FAA4C3D /* STPOSXCheckoutWebViewAdapter.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D0F0B3CFBEAE50DA4D82D83E801B41F /* STPOSXCheckoutWebViewAdapter.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		3940747A9B6BDD5DC55DFD9ECD8DC300 /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A413A5679D4B0AE4C38A2D7433C978A /* UIWebView+AFNetworking.m */; };
+		39EBBD44F94B83495AFBC537342BD168 /* STPBankAccount.h in Headers */ = {isa = PBXBuildFile; fileRef = 71F517FD0FA38D7BAA5BF5E5A26FB409 /* STPBankAccount.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3A60E1AA43C09B68A26EF2579E98D725 /* AFHTTPRequestOperationManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 710A7CA5598AE84587445FBA79FCFE35 /* AFHTTPRequestOperationManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B1575769C2E1566036FFF2F22917E72 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57F2B5E013FD1D42752E768761E043FC /* CoreGraphics.framework */; };
+		3C276FA6607F99306A2898D390C0D87B /* STPCheckoutViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 124CDB82145FA9AC119389DA00982874 /* STPCheckoutViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3CE08E61AA9A53953E30A442440E4D8F /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ED314B0153649BA81479EEEB3D11B48 /* AFURLRequestSerialization.m */; };
+		43E2B22CDD34DC9E3AC42491D4E0C7B6 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 57D1278FAA8A8A7C532CC3A4BD818D7D /* AFHTTPRequestOperation.m */; };
+		441D6B52B1D5BF939BC21EE4A89A4265 /* STPCheckoutInternalUIWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7992A31BD239E44988BD6D195BAF1545 /* STPCheckoutInternalUIWebViewController.m */; };
+		450C09059361F11A7F33B2559970F0A7 /* STPIOSCheckoutWebViewAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 16BD919E501FA750B838C3AAF7CC53F7 /* STPIOSCheckoutWebViewAdapter.m */; };
+		47B9CC2F998ACA2273090A292FB6F255 /* Stripe.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B7E37A58F979FA2ED47788E932C94DD /* Stripe.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4AD68C44057762C862EB902673B98C56 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C31A9B26388001B26382C7C355DA572 /* Foundation.framework */; };
+		5675E7169016543A92985F6EBC0C1411 /* AFURLSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 970477EDFFE4B9D93E757B5D5C674253 /* AFURLSessionManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		581B8BFF659D932711779DAE5A2F3014 /* STPCheckoutOptions.h in Headers */ = {isa = PBXBuildFile; fileRef = 50F2C2B93F3F257959A2C14D87D67721 /* STPCheckoutOptions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		58B3A1ECCB7C9B804E6E041C7D5FBFAC /* UIImageView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = A8AD1565DC61EC0825A14531B5B43401 /* UIImageView+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5DFB5A46A57DE37A4FEAD5E01C998A05 /* AFHTTPSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B8CA646FAFBDE42C8705BEA1E885B60 /* AFHTTPSessionManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		62CD9D1C3C73ABBF1D4A56384E38E440 /* STPOSXCheckoutWebViewAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 32A2716E2A16A23E5324C69F98D3C65C /* STPOSXCheckoutWebViewAdapter.m */; };
+		6F9903D7FBE35A5E0049C94DD18BC474 /* STPBankAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = B3240A3FC7A5AACBAF92CC9DA21DC820 /* STPBankAccount.m */; };
+		70F700FCFDC06DE227105485BCBEA64F /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 272643F56613CA0D336AE3DBF19DC404 /* Pods-dummy.m */; };
+		71005B9E231F6B417180363C992FCEFB /* STPAPIConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 98C9740E8494D08949D24623B1F2C3C0 /* STPAPIConnection.m */; };
+		83A41E3B731F65DAFE9C86BC1C500269 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A19DF616941A51576DD057A9FD8F4AD8 /* Security.framework */; };
+		85753F39680B8B3E9300FD12B725B6AB /* STPStrictURLProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = EBF6C5A60248A4EB4E6297C34BD95C73 /* STPStrictURLProtocol.m */; };
+		86A345B686DF337CC22C577DFD08F6D6 /* AFNetworkReachabilityManager.h in Headers */ = {isa = PBXBuildFile; fileRef = E4DD3AFB549E1E4088A69CF99DDB2FCD /* AFNetworkReachabilityManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9094C35AE7A7B0D9520B19C724D5A248 /* STPFormEncoder.h in Headers */ = {isa = PBXBuildFile; fileRef = A17214BFD94D189AB0A0722A15739848 /* STPFormEncoder.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		95E69A233A1D42F7E36D4D4C79E5AF46 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C168D5DBDB78691493E24B13EF6B6A8 /* SystemConfiguration.framework */; };
+		96C7E8AA9881FF1B1EC3EED102DF287D /* AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 89E69B811F979BFC80528FFFAB3193EF /* AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		98D00CD3E197EAA6C7450281537CD79C /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = A11EF35F76589EC905F73515E71FF55C /* AFSecurityPolicy.m */; };
+		9ADBD98E15825B7404F10ADD452E8BC5 /* STPToken.h in Headers */ = {isa = PBXBuildFile; fileRef = EBC361483EF716B908437FA3FE6C424A /* STPToken.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9C5A2CD706CA4688C9F4BC6D63BAB935 /* UIAlertView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 64DD33F8C1E2DD764911ACAAB81E94D7 /* UIAlertView+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9EB03DD48F36D272B5C4B8D7749AB783 /* STPColorUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = CF8AA0B2D986B7C713E4DE7AEDA134E4 /* STPColorUtils.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		9ECCBA3A8092E326BE8CAD2075001BB2 /* UIRefreshControl+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = B3432412FAF8020E366BE23F1C208354 /* UIRefreshControl+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9F56B2A232106CEC99383ADACDC85C4A /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 8277A1F23610CF76442E1AF517648AD0 /* UIImageView+AFNetworking.m */; };
+		A545AFFA4DC73F064896F7E1E398E67D /* STPCard.m in Sources */ = {isa = PBXBuildFile; fileRef = EB947772F9A30ACF1D421348ACDEE30B /* STPCard.m */; };
+		AAF2E61730FAA37AF5A03D4571D30E8B /* UIActivityIndicatorView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B54587BF94D1EA63D0F2159B4EFB37E /* UIActivityIndicatorView+AFNetworking.m */; };
+		AF4D380EEDB0254DF1A6D4A29D938E01 /* STPAPIConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = A19FA02A15E0FFECA279B751887CB09F /* STPAPIConnection.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B3024FF8C1A683A3BDAB8AFE2ED905FB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C31A9B26388001B26382C7C355DA572 /* Foundation.framework */; };
+		B5DF5FB6139F94B686E472A516E7960A /* STPCheckoutDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 8588ED4E145FE1CE6A50F713DDA508CE /* STPCheckoutDelegate.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		BF0B65604050F77454717270372F6493 /* Stripe-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A69B14BBBA86EB7C82C707857161AA16 /* Stripe-dummy.m */; };
+		C2D6FB536DADE3B76C0A0BF407E62790 /* STPCard.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DCC4DDE6EEEC3FF01A68554C000C7B4 /* STPCard.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C2D9B8F82D04BDD22AE84A18C08A19C9 /* UIActivityIndicatorView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = F02DD67536BF3F24697E834E19B05BE0 /* UIActivityIndicatorView+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C4D34910F4D6673E3B9E99D7A781DC6C /* UIWebView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = B755697216E896047AAB15A3F24FB8E8 /* UIWebView+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C59584009765D8E13DBD8C23AFC54E2B /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CE8218A5CB31A34C7A5EAF65F61F6F4 /* AFHTTPRequestOperationManager.m */; };
+		C5CF746D676459BCC2F304550A2D8B03 /* STPColorUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = BD4802BAA6F224379E335D463E86F8CF /* STPColorUtils.m */; };
+		D227CEAB5B8A915D6E65EA6DD91F51D6 /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 91884EA7410A5C1E6E1B6B498B5439C0 /* AFNetworkActivityIndicatorManager.m */; };
+		D33AD9A4546DBA6926DE905BA2E829A8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C31A9B26388001B26382C7C355DA572 /* Foundation.framework */; };
+		D53D346EDA02176B05B3EB0BC617354B /* UIButton+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = CD237AFE4B6C36B21CEBB20A6B159EF7 /* UIButton+AFNetworking.m */; };
+		D6D9125049BC87CDA2D57020C0153E75 /* UIAlertView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BC13489CD907CFC498C718DBD71381B /* UIAlertView+AFNetworking.m */; };
+		D9891846CCABD8E898DA0EDA13711C95 /* STPCheckoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB34CC4E1CEC5D5DFE593FA5449547C8 /* STPCheckoutViewController.m */; };
+		DC47408FF73829C663258961F2B4524E /* STPFormEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 41CE89FE273216C26A8656DA54EADE04 /* STPFormEncoder.m */; };
+		DEA1065191A84F4399632F5DC5E5358B /* AFNetworkActivityIndicatorManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 1295CA3347AF3CCA8AC07A5FD52DDCC6 /* AFNetworkActivityIndicatorManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DF180E88C3E1BF35D93F31300FA4BC65 /* AFHTTPRequestOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = DD73C1F8B57A7EB273CB24168E580529 /* AFHTTPRequestOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E1AF43ABC75662430095A6BC11D1CC53 /* STPAPIClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 229C9E0873C4EFDC8CC2A9430D286F7D /* STPAPIClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E31D526BCD4CB5F5A6B74338B3F479E8 /* STPNullabilityMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 8433283BFE363B681ED18177C3A79B43 /* STPNullabilityMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E38C00106AD769DAA4E938F8878B7A7D /* UIProgressView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = F7A75D8D6D375BA42D0377F677ACE474 /* UIProgressView+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E4213D476018C8B58166DF22722C0463 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F33B0A7309556EE1B746A0BC2D4A332A /* AFURLSessionManager.m */; };
+		E43F5D7E2C48C315DDA216F87E47B50B /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2B240D99C3FC6A7DC6C66A2434CA799 /* MobileCoreServices.framework */; };
+		E6E2E57ADE1578E3ED86B1387009F3F8 /* AFSecurityPolicy.h in Headers */ = {isa = PBXBuildFile; fileRef = A6F45374C53DCB6D5412C6E2A041C064 /* AFSecurityPolicy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EAC33FF21DBF26381F425381F18B9965 /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 29DE25C1E9174F82082A46AECDFAE997 /* AFNetworkReachabilityManager.m */; };
+		EC90FB36A0DEA9A2967361DF81AADCA7 /* STPIOSCheckoutWebViewAdapter.h in Headers */ = {isa = PBXBuildFile; fileRef = D517CE2F525FD24ECAF73EDC201B178F /* STPIOSCheckoutWebViewAdapter.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F0ECCD8F5772C01D1EEC50047C2E4F56 /* StripeError.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C22DE381EBB28604D4EA23D3D107718 /* StripeError.m */; };
+		F3B32DA5C47A34B5B2609E632FFA8557 /* AFURLConnectionOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = E6A5FAAD91DDEF1AA67D9F6EC412E356 /* AFURLConnectionOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F424922DC330A701C78CEA5923293BD9 /* STPAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 46505A4F61779C88C58001F079B26EDC /* STPAPIClient.m */; };
+		FB13976159230EA492199199181C64AC /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B9F1AA9FF295B79EC2E0D4D6A70CAF4 /* AFHTTPSessionManager.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0D357679AE7CF4B0DD8D0CFD74A501D7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AF6325B7459ED8E1F5F43C23EED1CCAA;
+			remoteInfo = Stripe;
+		};
+		DAC62457E31398D15655A827B0199B33 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2602F3D0DAC534568B6AD7EEA0DD1959;
+			remoteInfo = AFNetworking;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		043E0555D9E925CF0F13F8D00E4C3FC1 /* Stripe-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Stripe-prefix.pch"; sourceTree = "<group>"; };
+		0C22DE381EBB28604D4EA23D3D107718 /* StripeError.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = StripeError.m; path = Stripe/StripeError.m; sourceTree = "<group>"; };
+		10834806BD7B412BC24F347361FA2C8E /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
+		124CDB82145FA9AC119389DA00982874 /* STPCheckoutViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STPCheckoutViewController.h; path = Stripe/PublicHeaders/Checkout/STPCheckoutViewController.h; sourceTree = "<group>"; };
+		1295CA3347AF3CCA8AC07A5FD52DDCC6 /* AFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworkActivityIndicatorManager.h; path = "UIKit+AFNetworking/AFNetworkActivityIndicatorManager.h"; sourceTree = "<group>"; };
+		16BD919E501FA750B838C3AAF7CC53F7 /* STPIOSCheckoutWebViewAdapter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = STPIOSCheckoutWebViewAdapter.m; path = Stripe/Checkout/STPIOSCheckoutWebViewAdapter.m; sourceTree = "<group>"; };
+		1A413A5679D4B0AE4C38A2D7433C978A /* UIWebView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIWebView+AFNetworking.m"; path = "UIKit+AFNetworking/UIWebView+AFNetworking.m"; sourceTree = "<group>"; };
+		229C9E0873C4EFDC8CC2A9430D286F7D /* STPAPIClient.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STPAPIClient.h; path = Stripe/PublicHeaders/STPAPIClient.h; sourceTree = "<group>"; };
+		272643F56613CA0D336AE3DBF19DC404 /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
+		29DE25C1E9174F82082A46AECDFAE997 /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFNetworkReachabilityManager.m; path = AFNetworking/AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
+		2E64976FA5B79FB7038927ABF5CE5200 /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLResponseSerialization.h; path = AFNetworking/AFURLResponseSerialization.h; sourceTree = "<group>"; };
+		32A2716E2A16A23E5324C69F98D3C65C /* STPOSXCheckoutWebViewAdapter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = STPOSXCheckoutWebViewAdapter.m; path = Stripe/Checkout/STPOSXCheckoutWebViewAdapter.m; sourceTree = "<group>"; };
+		37DB56D75062CC75FCB0966E1C6E8A8E /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
+		3B7E37A58F979FA2ED47788E932C94DD /* Stripe.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Stripe.h; path = Stripe/PublicHeaders/Stripe.h; sourceTree = "<group>"; };
+		41CE89FE273216C26A8656DA54EADE04 /* STPFormEncoder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = STPFormEncoder.m; path = Stripe/STPFormEncoder.m; sourceTree = "<group>"; };
+		455B0FB7B202BD0979A996A4DBF10D10 /* UIButton+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+AFNetworking.h"; path = "UIKit+AFNetworking/UIButton+AFNetworking.h"; sourceTree = "<group>"; };
+		46505A4F61779C88C58001F079B26EDC /* STPAPIClient.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = STPAPIClient.m; path = Stripe/STPAPIClient.m; sourceTree = "<group>"; };
+		475E4D3633E25F1D37BCF3D638E4C3B2 /* AFNetworking-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AFNetworking-prefix.pch"; sourceTree = "<group>"; };
+		4E762F23EC34ED4A6FF3312D84E33A40 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
+		50F2C2B93F3F257959A2C14D87D67721 /* STPCheckoutOptions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STPCheckoutOptions.h; path = Stripe/PublicHeaders/Checkout/STPCheckoutOptions.h; sourceTree = "<group>"; };
+		57D1278FAA8A8A7C532CC3A4BD818D7D /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFHTTPRequestOperation.m; path = AFNetworking/AFHTTPRequestOperation.m; sourceTree = "<group>"; };
+		57F2B5E013FD1D42752E768761E043FC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		5B2539DDF065CD3CF915CB71A7E02EF6 /* Stripe.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Stripe.xcconfig; sourceTree = "<group>"; };
+		5BC13489CD907CFC498C718DBD71381B /* UIAlertView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIAlertView+AFNetworking.m"; path = "UIKit+AFNetworking/UIAlertView+AFNetworking.m"; sourceTree = "<group>"; };
+		5C3F234CC1E12834BDD66F94453EED78 /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLResponseSerialization.m; path = AFNetworking/AFURLResponseSerialization.m; sourceTree = "<group>"; };
+		5CE8218A5CB31A34C7A5EAF65F61F6F4 /* AFHTTPRequestOperationManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFHTTPRequestOperationManager.m; path = AFNetworking/AFHTTPRequestOperationManager.m; sourceTree = "<group>"; };
+		5DCC4DDE6EEEC3FF01A68554C000C7B4 /* STPCard.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STPCard.h; path = Stripe/PublicHeaders/STPCard.h; sourceTree = "<group>"; };
+		5ED314B0153649BA81479EEEB3D11B48 /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLRequestSerialization.m; path = AFNetworking/AFURLRequestSerialization.m; sourceTree = "<group>"; };
+		61A6037BBF15774DD73CCD3F80566749 /* STPStrictURLProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STPStrictURLProtocol.h; path = Stripe/Checkout/STPStrictURLProtocol.h; sourceTree = "<group>"; };
+		62F80A9E090BFB4B4068312DEB67E649 /* STPCheckoutWebViewAdapter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STPCheckoutWebViewAdapter.h; path = Stripe/Checkout/STPCheckoutWebViewAdapter.h; sourceTree = "<group>"; };
+		64DD33F8C1E2DD764911ACAAB81E94D7 /* UIAlertView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIAlertView+AFNetworking.h"; path = "UIKit+AFNetworking/UIAlertView+AFNetworking.h"; sourceTree = "<group>"; };
+		6911BECA35E7518D864239B7E898EEF3 /* Pods-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-frameworks.sh"; sourceTree = "<group>"; };
+		710A7CA5598AE84587445FBA79FCFE35 /* AFHTTPRequestOperationManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFHTTPRequestOperationManager.h; path = AFNetworking/AFHTTPRequestOperationManager.h; sourceTree = "<group>"; };
+		71F517FD0FA38D7BAA5BF5E5A26FB409 /* STPBankAccount.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STPBankAccount.h; path = Stripe/PublicHeaders/STPBankAccount.h; sourceTree = "<group>"; };
+		796460016A523525C6CC8D28588B2A12 /* UIKit+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIKit+AFNetworking.h"; path = "UIKit+AFNetworking/UIKit+AFNetworking.h"; sourceTree = "<group>"; };
+		7992A31BD239E44988BD6D195BAF1545 /* STPCheckoutInternalUIWebViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = STPCheckoutInternalUIWebViewController.m; path = Stripe/Checkout/STPCheckoutInternalUIWebViewController.m; sourceTree = "<group>"; };
+		7B54587BF94D1EA63D0F2159B4EFB37E /* UIActivityIndicatorView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIActivityIndicatorView+AFNetworking.m"; path = "UIKit+AFNetworking/UIActivityIndicatorView+AFNetworking.m"; sourceTree = "<group>"; };
+		7C168D5DBDB78691493E24B13EF6B6A8 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
+		7C95DB37226711BA13A3FE63A616C581 /* libAFNetworking.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAFNetworking.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8277A1F23610CF76442E1AF517648AD0 /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+AFNetworking.m"; path = "UIKit+AFNetworking/UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
+		8433283BFE363B681ED18177C3A79B43 /* STPNullabilityMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STPNullabilityMacros.h; path = Stripe/PublicHeaders/STPNullabilityMacros.h; sourceTree = "<group>"; };
+		8588ED4E145FE1CE6A50F713DDA508CE /* STPCheckoutDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STPCheckoutDelegate.h; path = Stripe/Checkout/STPCheckoutDelegate.h; sourceTree = "<group>"; };
+		8705A4050BF501610328E995F5308AB9 /* StripeError.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = StripeError.h; path = Stripe/PublicHeaders/StripeError.h; sourceTree = "<group>"; };
+		89E69B811F979BFC80528FFFAB3193EF /* AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworking.h; path = AFNetworking/AFNetworking.h; sourceTree = "<group>"; };
+		8B9F1AA9FF295B79EC2E0D4D6A70CAF4 /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFHTTPSessionManager.m; path = AFNetworking/AFHTTPSessionManager.m; sourceTree = "<group>"; };
+		91884EA7410A5C1E6E1B6B498B5439C0 /* AFNetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFNetworkActivityIndicatorManager.m; path = "UIKit+AFNetworking/AFNetworkActivityIndicatorManager.m"; sourceTree = "<group>"; };
+		95FB06EF6ADD867EFA4A68F7997D72DA /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLRequestSerialization.h; path = AFNetworking/AFURLRequestSerialization.h; sourceTree = "<group>"; };
+		970477EDFFE4B9D93E757B5D5C674253 /* AFURLSessionManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLSessionManager.h; path = AFNetworking/AFURLSessionManager.h; sourceTree = "<group>"; };
+		97FFA8256DC00B048CCB7D892331D05E /* AFNetworking.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AFNetworking.xcconfig; sourceTree = "<group>"; };
+		98C9740E8494D08949D24623B1F2C3C0 /* STPAPIConnection.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = STPAPIConnection.m; path = Stripe/STPAPIConnection.m; sourceTree = "<group>"; };
+		98C98CDFB3F20F2925F6CD1F141BB14F /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
+		9B8CA646FAFBDE42C8705BEA1E885B60 /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFHTTPSessionManager.h; path = AFNetworking/AFHTTPSessionManager.h; sourceTree = "<group>"; };
+		9C31A9B26388001B26382C7C355DA572 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		9D0F0B3CFBEAE50DA4D82D83E801B41F /* STPOSXCheckoutWebViewAdapter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STPOSXCheckoutWebViewAdapter.h; path = Stripe/Checkout/STPOSXCheckoutWebViewAdapter.h; sourceTree = "<group>"; };
+		9FA89958357291BC17A551C24751B745 /* UIProgressView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIProgressView+AFNetworking.m"; path = "UIKit+AFNetworking/UIProgressView+AFNetworking.m"; sourceTree = "<group>"; };
+		A11EF35F76589EC905F73515E71FF55C /* AFSecurityPolicy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFSecurityPolicy.m; path = AFNetworking/AFSecurityPolicy.m; sourceTree = "<group>"; };
+		A17214BFD94D189AB0A0722A15739848 /* STPFormEncoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STPFormEncoder.h; path = Stripe/STPFormEncoder.h; sourceTree = "<group>"; };
+		A19DF616941A51576DD057A9FD8F4AD8 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		A19FA02A15E0FFECA279B751887CB09F /* STPAPIConnection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STPAPIConnection.h; path = Stripe/STPAPIConnection.h; sourceTree = "<group>"; };
+		A1A36D34413696BE466E2CA0AFF194DA /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
+		A69B14BBBA86EB7C82C707857161AA16 /* Stripe-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Stripe-dummy.m"; sourceTree = "<group>"; };
+		A6F45374C53DCB6D5412C6E2A041C064 /* AFSecurityPolicy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFSecurityPolicy.h; path = AFNetworking/AFSecurityPolicy.h; sourceTree = "<group>"; };
+		A8AD1565DC61EC0825A14531B5B43401 /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImageView+AFNetworking.h"; path = "UIKit+AFNetworking/UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
+		B170370332B13AFF0DB385469FDBF4DB /* STPToken.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = STPToken.m; path = Stripe/STPToken.m; sourceTree = "<group>"; };
+		B3240A3FC7A5AACBAF92CC9DA21DC820 /* STPBankAccount.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = STPBankAccount.m; path = Stripe/STPBankAccount.m; sourceTree = "<group>"; };
+		B3432412FAF8020E366BE23F1C208354 /* UIRefreshControl+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIRefreshControl+AFNetworking.h"; path = "UIKit+AFNetworking/UIRefreshControl+AFNetworking.h"; sourceTree = "<group>"; };
+		B755697216E896047AAB15A3F24FB8E8 /* UIWebView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIWebView+AFNetworking.h"; path = "UIKit+AFNetworking/UIWebView+AFNetworking.h"; sourceTree = "<group>"; };
+		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BD4802BAA6F224379E335D463E86F8CF /* STPColorUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = STPColorUtils.m; path = Stripe/Checkout/STPColorUtils.m; sourceTree = "<group>"; };
+		C0E0E10B6EB2DFFDCE181E7655B904AF /* UIRefreshControl+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIRefreshControl+AFNetworking.m"; path = "UIKit+AFNetworking/UIRefreshControl+AFNetworking.m"; sourceTree = "<group>"; };
+		C2B240D99C3FC6A7DC6C66A2434CA799 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/MobileCoreServices.framework; sourceTree = DEVELOPER_DIR; };
+		CD237AFE4B6C36B21CEBB20A6B159EF7 /* UIButton+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+AFNetworking.m"; path = "UIKit+AFNetworking/UIButton+AFNetworking.m"; sourceTree = "<group>"; };
+		CF8AA0B2D986B7C713E4DE7AEDA134E4 /* STPColorUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STPColorUtils.h; path = Stripe/Checkout/STPColorUtils.h; sourceTree = "<group>"; };
+		D517CE2F525FD24ECAF73EDC201B178F /* STPIOSCheckoutWebViewAdapter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STPIOSCheckoutWebViewAdapter.h; path = Stripe/Checkout/STPIOSCheckoutWebViewAdapter.h; sourceTree = "<group>"; };
+		DD73C1F8B57A7EB273CB24168E580529 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFHTTPRequestOperation.h; path = AFNetworking/AFHTTPRequestOperation.h; sourceTree = "<group>"; };
+		E12C09AE461B119C6DA53920E9ED856D /* STPCheckoutOptions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = STPCheckoutOptions.m; path = Stripe/Checkout/STPCheckoutOptions.m; sourceTree = "<group>"; };
+		E4DD3AFB549E1E4088A69CF99DDB2FCD /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworkReachabilityManager.h; path = AFNetworking/AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
+		E6A5FAAD91DDEF1AA67D9F6EC412E356 /* AFURLConnectionOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLConnectionOperation.h; path = AFNetworking/AFURLConnectionOperation.h; sourceTree = "<group>"; };
+		E9B96A6AA1CCB825B06BC60B85DB0CAB /* AFNetworking-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AFNetworking-dummy.m"; sourceTree = "<group>"; };
+		EB947772F9A30ACF1D421348ACDEE30B /* STPCard.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = STPCard.m; path = Stripe/STPCard.m; sourceTree = "<group>"; };
+		EBC361483EF716B908437FA3FE6C424A /* STPToken.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STPToken.h; path = Stripe/PublicHeaders/STPToken.h; sourceTree = "<group>"; };
+		EBF6C5A60248A4EB4E6297C34BD95C73 /* STPStrictURLProtocol.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = STPStrictURLProtocol.m; path = Stripe/Checkout/STPStrictURLProtocol.m; sourceTree = "<group>"; };
+		ED70D403D7BE7C7305FA8671A0B8DD6E /* AFURLConnectionOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLConnectionOperation.m; path = AFNetworking/AFURLConnectionOperation.m; sourceTree = "<group>"; };
+		F02DD67536BF3F24697E834E19B05BE0 /* UIActivityIndicatorView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIActivityIndicatorView+AFNetworking.h"; path = "UIKit+AFNetworking/UIActivityIndicatorView+AFNetworking.h"; sourceTree = "<group>"; };
+		F16D6E258C16145D1E80C91DDA05B522 /* STPCheckoutInternalUIWebViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = STPCheckoutInternalUIWebViewController.h; path = Stripe/Checkout/STPCheckoutInternalUIWebViewController.h; sourceTree = "<group>"; };
+		F33B0A7309556EE1B746A0BC2D4A332A /* AFURLSessionManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLSessionManager.m; path = AFNetworking/AFURLSessionManager.m; sourceTree = "<group>"; };
+		F6A25CED0DEA743E2D0B61A6A816A383 /* libStripe.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libStripe.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7A75D8D6D375BA42D0377F677ACE474 /* UIProgressView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIProgressView+AFNetworking.h"; path = "UIKit+AFNetworking/UIProgressView+AFNetworking.h"; sourceTree = "<group>"; };
+		FB34CC4E1CEC5D5DFE593FA5449547C8 /* STPCheckoutViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = STPCheckoutViewController.m; path = Stripe/Checkout/STPCheckoutViewController.m; sourceTree = "<group>"; };
+		FF802BD89CA8D403D1467D5C191CEA41 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		04F6492DF0B7A5669B29FD4F7C390666 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B1575769C2E1566036FFF2F22917E72 /* CoreGraphics.framework in Frameworks */,
+				4AD68C44057762C862EB902673B98C56 /* Foundation.framework in Frameworks */,
+				E43F5D7E2C48C315DDA216F87E47B50B /* MobileCoreServices.framework in Frameworks */,
+				1050F5E599DEA3C0FA7990B9C56E4073 /* Security.framework in Frameworks */,
+				95E69A233A1D42F7E36D4D4C79E5AF46 /* SystemConfiguration.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9187E27FD510EDAF1279290439ED6D18 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3024FF8C1A683A3BDAB8AFE2ED905FB /* Foundation.framework in Frameworks */,
+				83A41E3B731F65DAFE9C86BC1C500269 /* Security.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6203FC4F8EE60000E94D0FF37E61D66 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D33AD9A4546DBA6926DE905BA2E829A8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		037C0CA694176A3C0915F62C9D20B3E6 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B3D1D13E0C6553800746CB8FD61CF946 /* Pods */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		09684D98A416E4FF188C706313B4586C /* Stripe */ = {
+			isa = PBXGroup;
+			children = (
+				802AA6367AEC40A22914D6E41F153C75 /* Checkout */,
+				B297DACC21B7A4206F40C53DDB8DEB05 /* Core */,
+				E019F7139CA906C41CFE0B0253693AE4 /* Support Files */,
+			);
+			path = Stripe;
+			sourceTree = "<group>";
+		};
+		20B56609144CE204DFA8221F742B2D76 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FFD977C5D23FB16656C5D57197BAA49C /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		423F2CC1681BBC67256A14C608B809CE /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				89E69B811F979BFC80528FFFAB3193EF /* AFNetworking.h */,
+				EB074D26B85D97DD9882EA8AC8C844CB /* NSURLConnection */,
+				71D4EDE420FC80B44FCD273891B6FB4C /* NSURLSession */,
+				75AB0A4B9CA0C2C4D31D6280212CAA89 /* Reachability */,
+				D0E976F16A2AB1A58BD6D99CDCF0D6CB /* Security */,
+				B185D6180FB1DB50A61CFCBD5E317606 /* Serialization */,
+				E0523D36E12D0038E4B89AEECA492E78 /* Support Files */,
+				9E5E8BBD72C41A1E2630FCBB1B647E83 /* UIKit */,
+			);
+			path = AFNetworking;
+			sourceTree = "<group>";
+		};
+		71D4EDE420FC80B44FCD273891B6FB4C /* NSURLSession */ = {
+			isa = PBXGroup;
+			children = (
+				9B8CA646FAFBDE42C8705BEA1E885B60 /* AFHTTPSessionManager.h */,
+				8B9F1AA9FF295B79EC2E0D4D6A70CAF4 /* AFHTTPSessionManager.m */,
+				970477EDFFE4B9D93E757B5D5C674253 /* AFURLSessionManager.h */,
+				F33B0A7309556EE1B746A0BC2D4A332A /* AFURLSessionManager.m */,
+			);
+			name = NSURLSession;
+			sourceTree = "<group>";
+		};
+		75AB0A4B9CA0C2C4D31D6280212CAA89 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				E4DD3AFB549E1E4088A69CF99DDB2FCD /* AFNetworkReachabilityManager.h */,
+				29DE25C1E9174F82082A46AECDFAE997 /* AFNetworkReachabilityManager.m */,
+			);
+			name = Reachability;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+				20B56609144CE204DFA8221F742B2D76 /* Frameworks */,
+				8AE6B13F9DC0742712199167F45D9E25 /* Pods */,
+				93A1EDCEC6251A2BEA3520366ED9771C /* Products */,
+				037C0CA694176A3C0915F62C9D20B3E6 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		802AA6367AEC40A22914D6E41F153C75 /* Checkout */ = {
+			isa = PBXGroup;
+			children = (
+				8588ED4E145FE1CE6A50F713DDA508CE /* STPCheckoutDelegate.h */,
+				F16D6E258C16145D1E80C91DDA05B522 /* STPCheckoutInternalUIWebViewController.h */,
+				7992A31BD239E44988BD6D195BAF1545 /* STPCheckoutInternalUIWebViewController.m */,
+				50F2C2B93F3F257959A2C14D87D67721 /* STPCheckoutOptions.h */,
+				E12C09AE461B119C6DA53920E9ED856D /* STPCheckoutOptions.m */,
+				124CDB82145FA9AC119389DA00982874 /* STPCheckoutViewController.h */,
+				FB34CC4E1CEC5D5DFE593FA5449547C8 /* STPCheckoutViewController.m */,
+				62F80A9E090BFB4B4068312DEB67E649 /* STPCheckoutWebViewAdapter.h */,
+				CF8AA0B2D986B7C713E4DE7AEDA134E4 /* STPColorUtils.h */,
+				BD4802BAA6F224379E335D463E86F8CF /* STPColorUtils.m */,
+				D517CE2F525FD24ECAF73EDC201B178F /* STPIOSCheckoutWebViewAdapter.h */,
+				16BD919E501FA750B838C3AAF7CC53F7 /* STPIOSCheckoutWebViewAdapter.m */,
+				9D0F0B3CFBEAE50DA4D82D83E801B41F /* STPOSXCheckoutWebViewAdapter.h */,
+				32A2716E2A16A23E5324C69F98D3C65C /* STPOSXCheckoutWebViewAdapter.m */,
+				61A6037BBF15774DD73CCD3F80566749 /* STPStrictURLProtocol.h */,
+				EBF6C5A60248A4EB4E6297C34BD95C73 /* STPStrictURLProtocol.m */,
+			);
+			name = Checkout;
+			sourceTree = "<group>";
+		};
+		8AE6B13F9DC0742712199167F45D9E25 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				423F2CC1681BBC67256A14C608B809CE /* AFNetworking */,
+				09684D98A416E4FF188C706313B4586C /* Stripe */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		93A1EDCEC6251A2BEA3520366ED9771C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7C95DB37226711BA13A3FE63A616C581 /* libAFNetworking.a */,
+				FF802BD89CA8D403D1467D5C191CEA41 /* libPods.a */,
+				F6A25CED0DEA743E2D0B61A6A816A383 /* libStripe.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9E5E8BBD72C41A1E2630FCBB1B647E83 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				1295CA3347AF3CCA8AC07A5FD52DDCC6 /* AFNetworkActivityIndicatorManager.h */,
+				91884EA7410A5C1E6E1B6B498B5439C0 /* AFNetworkActivityIndicatorManager.m */,
+				F02DD67536BF3F24697E834E19B05BE0 /* UIActivityIndicatorView+AFNetworking.h */,
+				7B54587BF94D1EA63D0F2159B4EFB37E /* UIActivityIndicatorView+AFNetworking.m */,
+				64DD33F8C1E2DD764911ACAAB81E94D7 /* UIAlertView+AFNetworking.h */,
+				5BC13489CD907CFC498C718DBD71381B /* UIAlertView+AFNetworking.m */,
+				455B0FB7B202BD0979A996A4DBF10D10 /* UIButton+AFNetworking.h */,
+				CD237AFE4B6C36B21CEBB20A6B159EF7 /* UIButton+AFNetworking.m */,
+				A8AD1565DC61EC0825A14531B5B43401 /* UIImageView+AFNetworking.h */,
+				8277A1F23610CF76442E1AF517648AD0 /* UIImageView+AFNetworking.m */,
+				796460016A523525C6CC8D28588B2A12 /* UIKit+AFNetworking.h */,
+				F7A75D8D6D375BA42D0377F677ACE474 /* UIProgressView+AFNetworking.h */,
+				9FA89958357291BC17A551C24751B745 /* UIProgressView+AFNetworking.m */,
+				B3432412FAF8020E366BE23F1C208354 /* UIRefreshControl+AFNetworking.h */,
+				C0E0E10B6EB2DFFDCE181E7655B904AF /* UIRefreshControl+AFNetworking.m */,
+				B755697216E896047AAB15A3F24FB8E8 /* UIWebView+AFNetworking.h */,
+				1A413A5679D4B0AE4C38A2D7433C978A /* UIWebView+AFNetworking.m */,
+			);
+			name = UIKit;
+			sourceTree = "<group>";
+		};
+		B185D6180FB1DB50A61CFCBD5E317606 /* Serialization */ = {
+			isa = PBXGroup;
+			children = (
+				95FB06EF6ADD867EFA4A68F7997D72DA /* AFURLRequestSerialization.h */,
+				5ED314B0153649BA81479EEEB3D11B48 /* AFURLRequestSerialization.m */,
+				2E64976FA5B79FB7038927ABF5CE5200 /* AFURLResponseSerialization.h */,
+				5C3F234CC1E12834BDD66F94453EED78 /* AFURLResponseSerialization.m */,
+			);
+			name = Serialization;
+			sourceTree = "<group>";
+		};
+		B297DACC21B7A4206F40C53DDB8DEB05 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				229C9E0873C4EFDC8CC2A9430D286F7D /* STPAPIClient.h */,
+				46505A4F61779C88C58001F079B26EDC /* STPAPIClient.m */,
+				A19FA02A15E0FFECA279B751887CB09F /* STPAPIConnection.h */,
+				98C9740E8494D08949D24623B1F2C3C0 /* STPAPIConnection.m */,
+				71F517FD0FA38D7BAA5BF5E5A26FB409 /* STPBankAccount.h */,
+				B3240A3FC7A5AACBAF92CC9DA21DC820 /* STPBankAccount.m */,
+				5DCC4DDE6EEEC3FF01A68554C000C7B4 /* STPCard.h */,
+				EB947772F9A30ACF1D421348ACDEE30B /* STPCard.m */,
+				A17214BFD94D189AB0A0722A15739848 /* STPFormEncoder.h */,
+				41CE89FE273216C26A8656DA54EADE04 /* STPFormEncoder.m */,
+				8433283BFE363B681ED18177C3A79B43 /* STPNullabilityMacros.h */,
+				EBC361483EF716B908437FA3FE6C424A /* STPToken.h */,
+				B170370332B13AFF0DB385469FDBF4DB /* STPToken.m */,
+				3B7E37A58F979FA2ED47788E932C94DD /* Stripe.h */,
+				8705A4050BF501610328E995F5308AB9 /* StripeError.h */,
+				0C22DE381EBB28604D4EA23D3D107718 /* StripeError.m */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		B3D1D13E0C6553800746CB8FD61CF946 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				37DB56D75062CC75FCB0966E1C6E8A8E /* Pods-acknowledgements.markdown */,
+				10834806BD7B412BC24F347361FA2C8E /* Pods-acknowledgements.plist */,
+				272643F56613CA0D336AE3DBF19DC404 /* Pods-dummy.m */,
+				6911BECA35E7518D864239B7E898EEF3 /* Pods-frameworks.sh */,
+				A1A36D34413696BE466E2CA0AFF194DA /* Pods-resources.sh */,
+				4E762F23EC34ED4A6FF3312D84E33A40 /* Pods.debug.xcconfig */,
+				98C98CDFB3F20F2925F6CD1F141BB14F /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			path = "Target Support Files/Pods";
+			sourceTree = "<group>";
+		};
+		D0E976F16A2AB1A58BD6D99CDCF0D6CB /* Security */ = {
+			isa = PBXGroup;
+			children = (
+				A6F45374C53DCB6D5412C6E2A041C064 /* AFSecurityPolicy.h */,
+				A11EF35F76589EC905F73515E71FF55C /* AFSecurityPolicy.m */,
+			);
+			name = Security;
+			sourceTree = "<group>";
+		};
+		E019F7139CA906C41CFE0B0253693AE4 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5B2539DDF065CD3CF915CB71A7E02EF6 /* Stripe.xcconfig */,
+				A69B14BBBA86EB7C82C707857161AA16 /* Stripe-dummy.m */,
+				043E0555D9E925CF0F13F8D00E4C3FC1 /* Stripe-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Stripe";
+			sourceTree = "<group>";
+		};
+		E0523D36E12D0038E4B89AEECA492E78 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				97FFA8256DC00B048CCB7D892331D05E /* AFNetworking.xcconfig */,
+				E9B96A6AA1CCB825B06BC60B85DB0CAB /* AFNetworking-dummy.m */,
+				475E4D3633E25F1D37BCF3D638E4C3B2 /* AFNetworking-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/AFNetworking";
+			sourceTree = "<group>";
+		};
+		EB074D26B85D97DD9882EA8AC8C844CB /* NSURLConnection */ = {
+			isa = PBXGroup;
+			children = (
+				DD73C1F8B57A7EB273CB24168E580529 /* AFHTTPRequestOperation.h */,
+				57D1278FAA8A8A7C532CC3A4BD818D7D /* AFHTTPRequestOperation.m */,
+				710A7CA5598AE84587445FBA79FCFE35 /* AFHTTPRequestOperationManager.h */,
+				5CE8218A5CB31A34C7A5EAF65F61F6F4 /* AFHTTPRequestOperationManager.m */,
+				E6A5FAAD91DDEF1AA67D9F6EC412E356 /* AFURLConnectionOperation.h */,
+				ED70D403D7BE7C7305FA8671A0B8DD6E /* AFURLConnectionOperation.m */,
+			);
+			name = NSURLConnection;
+			sourceTree = "<group>";
+		};
+		FFD977C5D23FB16656C5D57197BAA49C /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				57F2B5E013FD1D42752E768761E043FC /* CoreGraphics.framework */,
+				9C31A9B26388001B26382C7C355DA572 /* Foundation.framework */,
+				C2B240D99C3FC6A7DC6C66A2434CA799 /* MobileCoreServices.framework */,
+				A19DF616941A51576DD057A9FD8F4AD8 /* Security.framework */,
+				7C168D5DBDB78691493E24B13EF6B6A8 /* SystemConfiguration.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		26E101B486F95D438A3BA112B66FC59A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF180E88C3E1BF35D93F31300FA4BC65 /* AFHTTPRequestOperation.h in Headers */,
+				3A60E1AA43C09B68A26EF2579E98D725 /* AFHTTPRequestOperationManager.h in Headers */,
+				5DFB5A46A57DE37A4FEAD5E01C998A05 /* AFHTTPSessionManager.h in Headers */,
+				DEA1065191A84F4399632F5DC5E5358B /* AFNetworkActivityIndicatorManager.h in Headers */,
+				96C7E8AA9881FF1B1EC3EED102DF287D /* AFNetworking.h in Headers */,
+				86A345B686DF337CC22C577DFD08F6D6 /* AFNetworkReachabilityManager.h in Headers */,
+				E6E2E57ADE1578E3ED86B1387009F3F8 /* AFSecurityPolicy.h in Headers */,
+				F3B32DA5C47A34B5B2609E632FFA8557 /* AFURLConnectionOperation.h in Headers */,
+				0E4FD75ECCFD6A179057653D9BA711CD /* AFURLRequestSerialization.h in Headers */,
+				136FB41CEB8D026BA1B0E0C514CD90F7 /* AFURLResponseSerialization.h in Headers */,
+				5675E7169016543A92985F6EBC0C1411 /* AFURLSessionManager.h in Headers */,
+				C2D9B8F82D04BDD22AE84A18C08A19C9 /* UIActivityIndicatorView+AFNetworking.h in Headers */,
+				9C5A2CD706CA4688C9F4BC6D63BAB935 /* UIAlertView+AFNetworking.h in Headers */,
+				04A416BF54F937DAE3D19FE50DA72202 /* UIButton+AFNetworking.h in Headers */,
+				58B3A1ECCB7C9B804E6E041C7D5FBFAC /* UIImageView+AFNetworking.h in Headers */,
+				263D08D54C23AAE447AC8A0E6BD02B39 /* UIKit+AFNetworking.h in Headers */,
+				E38C00106AD769DAA4E938F8878B7A7D /* UIProgressView+AFNetworking.h in Headers */,
+				9ECCBA3A8092E326BE8CAD2075001BB2 /* UIRefreshControl+AFNetworking.h in Headers */,
+				C4D34910F4D6673E3B9E99D7A781DC6C /* UIWebView+AFNetworking.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		324F5DE786E176C381CDD486CB50089C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1AF43ABC75662430095A6BC11D1CC53 /* STPAPIClient.h in Headers */,
+				AF4D380EEDB0254DF1A6D4A29D938E01 /* STPAPIConnection.h in Headers */,
+				39EBBD44F94B83495AFBC537342BD168 /* STPBankAccount.h in Headers */,
+				C2D6FB536DADE3B76C0A0BF407E62790 /* STPCard.h in Headers */,
+				B5DF5FB6139F94B686E472A516E7960A /* STPCheckoutDelegate.h in Headers */,
+				1276F92A5CA6DEE3EA2726A218FECE14 /* STPCheckoutInternalUIWebViewController.h in Headers */,
+				581B8BFF659D932711779DAE5A2F3014 /* STPCheckoutOptions.h in Headers */,
+				3C276FA6607F99306A2898D390C0D87B /* STPCheckoutViewController.h in Headers */,
+				2000D39AC63C7AB1198B49A90DDF2B8B /* STPCheckoutWebViewAdapter.h in Headers */,
+				9EB03DD48F36D272B5C4B8D7749AB783 /* STPColorUtils.h in Headers */,
+				9094C35AE7A7B0D9520B19C724D5A248 /* STPFormEncoder.h in Headers */,
+				EC90FB36A0DEA9A2967361DF81AADCA7 /* STPIOSCheckoutWebViewAdapter.h in Headers */,
+				E31D526BCD4CB5F5A6B74338B3F479E8 /* STPNullabilityMacros.h in Headers */,
+				2A07D21E977D44EC8285390D7FAA4C3D /* STPOSXCheckoutWebViewAdapter.h in Headers */,
+				0B9C32D6CB6A353C7A0EB82EA183B5D1 /* STPStrictURLProtocol.h in Headers */,
+				9ADBD98E15825B7404F10ADD452E8BC5 /* STPToken.h in Headers */,
+				47B9CC2F998ACA2273090A292FB6F255 /* Stripe.h in Headers */,
+				21652DBF20FEBFAB5417A8F78CF8022F /* StripeError.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		2602F3D0DAC534568B6AD7EEA0DD1959 /* AFNetworking */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A903F971702871B72BEA8510BB8CC55A /* Build configuration list for PBXNativeTarget "AFNetworking" */;
+			buildPhases = (
+				F06802316DD235FBB40BC284273405D6 /* Sources */,
+				04F6492DF0B7A5669B29FD4F7C390666 /* Frameworks */,
+				26E101B486F95D438A3BA112B66FC59A /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AFNetworking;
+			productName = AFNetworking;
+			productReference = 7C95DB37226711BA13A3FE63A616C581 /* libAFNetworking.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		AF6325B7459ED8E1F5F43C23EED1CCAA /* Stripe */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8787D6D5FBEED33B47D22F632FEF8BAF /* Build configuration list for PBXNativeTarget "Stripe" */;
+			buildPhases = (
+				49C43547F025E3522CC38E261FF73167 /* Sources */,
+				9187E27FD510EDAF1279290439ED6D18 /* Frameworks */,
+				324F5DE786E176C381CDD486CB50089C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Stripe;
+			productName = Stripe;
+			productReference = F6A25CED0DEA743E2D0B61A6A816A383 /* libStripe.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		DDFB817223578856ABD28D927EAEE404 /* Pods */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C4F84E6A1B3C30A69A6059DD65DB2AA0 /* Build configuration list for PBXNativeTarget "Pods" */;
+			buildPhases = (
+				D0C82080A8750086529CFAF3C7B99C8C /* Sources */,
+				A6203FC4F8EE60000E94D0FF37E61D66 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4BF95DB7E350DA51E8E16F5C5C9C8826 /* PBXTargetDependency */,
+				A2B893B19866AE76C7D077854ACCA198 /* PBXTargetDependency */,
+			);
+			name = Pods;
+			productName = Pods;
+			productReference = FF802BD89CA8D403D1467D5C191CEA41 /* libPods.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 93A1EDCEC6251A2BEA3520366ED9771C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2602F3D0DAC534568B6AD7EEA0DD1959 /* AFNetworking */,
+				DDFB817223578856ABD28D927EAEE404 /* Pods */,
+				AF6325B7459ED8E1F5F43C23EED1CCAA /* Stripe */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		49C43547F025E3522CC38E261FF73167 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F424922DC330A701C78CEA5923293BD9 /* STPAPIClient.m in Sources */,
+				71005B9E231F6B417180363C992FCEFB /* STPAPIConnection.m in Sources */,
+				6F9903D7FBE35A5E0049C94DD18BC474 /* STPBankAccount.m in Sources */,
+				A545AFFA4DC73F064896F7E1E398E67D /* STPCard.m in Sources */,
+				441D6B52B1D5BF939BC21EE4A89A4265 /* STPCheckoutInternalUIWebViewController.m in Sources */,
+				1891A697819F5B1F0040DB479B87D65F /* STPCheckoutOptions.m in Sources */,
+				D9891846CCABD8E898DA0EDA13711C95 /* STPCheckoutViewController.m in Sources */,
+				C5CF746D676459BCC2F304550A2D8B03 /* STPColorUtils.m in Sources */,
+				DC47408FF73829C663258961F2B4524E /* STPFormEncoder.m in Sources */,
+				450C09059361F11A7F33B2559970F0A7 /* STPIOSCheckoutWebViewAdapter.m in Sources */,
+				62CD9D1C3C73ABBF1D4A56384E38E440 /* STPOSXCheckoutWebViewAdapter.m in Sources */,
+				85753F39680B8B3E9300FD12B725B6AB /* STPStrictURLProtocol.m in Sources */,
+				049C46B00A1B51448DF2B2862170EF13 /* STPToken.m in Sources */,
+				BF0B65604050F77454717270372F6493 /* Stripe-dummy.m in Sources */,
+				F0ECCD8F5772C01D1EEC50047C2E4F56 /* StripeError.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0C82080A8750086529CFAF3C7B99C8C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70F700FCFDC06DE227105485BCBEA64F /* Pods-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F06802316DD235FBB40BC284273405D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43E2B22CDD34DC9E3AC42491D4E0C7B6 /* AFHTTPRequestOperation.m in Sources */,
+				C59584009765D8E13DBD8C23AFC54E2B /* AFHTTPRequestOperationManager.m in Sources */,
+				FB13976159230EA492199199181C64AC /* AFHTTPSessionManager.m in Sources */,
+				D227CEAB5B8A915D6E65EA6DD91F51D6 /* AFNetworkActivityIndicatorManager.m in Sources */,
+				205F51216177E22CD1AE443745B8A119 /* AFNetworking-dummy.m in Sources */,
+				EAC33FF21DBF26381F425381F18B9965 /* AFNetworkReachabilityManager.m in Sources */,
+				98D00CD3E197EAA6C7450281537CD79C /* AFSecurityPolicy.m in Sources */,
+				23F5B559815FF24B03A7D5D76F19E740 /* AFURLConnectionOperation.m in Sources */,
+				3CE08E61AA9A53953E30A442440E4D8F /* AFURLRequestSerialization.m in Sources */,
+				270D0D7DCF78170B1F481DDF511C07D6 /* AFURLResponseSerialization.m in Sources */,
+				E4213D476018C8B58166DF22722C0463 /* AFURLSessionManager.m in Sources */,
+				AAF2E61730FAA37AF5A03D4571D30E8B /* UIActivityIndicatorView+AFNetworking.m in Sources */,
+				D6D9125049BC87CDA2D57020C0153E75 /* UIAlertView+AFNetworking.m in Sources */,
+				D53D346EDA02176B05B3EB0BC617354B /* UIButton+AFNetworking.m in Sources */,
+				9F56B2A232106CEC99383ADACDC85C4A /* UIImageView+AFNetworking.m in Sources */,
+				27AFE404AA450432596D55D44B871E62 /* UIProgressView+AFNetworking.m in Sources */,
+				0659C55D67614156ACE73EF681E30DC7 /* UIRefreshControl+AFNetworking.m in Sources */,
+				3940747A9B6BDD5DC55DFD9ECD8DC300 /* UIWebView+AFNetworking.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4BF95DB7E350DA51E8E16F5C5C9C8826 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AFNetworking;
+			target = 2602F3D0DAC534568B6AD7EEA0DD1959 /* AFNetworking */;
+			targetProxy = DAC62457E31398D15655A827B0199B33 /* PBXContainerItemProxy */;
+		};
+		A2B893B19866AE76C7D077854ACCA198 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Stripe;
+			target = AF6325B7459ED8E1F5F43C23EED1CCAA /* Stripe */;
+			targetProxy = 0D357679AE7CF4B0DD8D0CFD74A501D7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		067E1C6B7B1B7C71E8A4AE3717DC7BB7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98C98CDFB3F20F2925F6CD1F141BB14F /* Pods.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		2C520ED2CD79D76CDC26E718A029F382 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B2539DDF065CD3CF915CB71A7E02EF6 /* Stripe.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Stripe/Stripe-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		4B5E6C07AE23766530F2C004E4FB3D7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 97FFA8256DC00B048CCB7D892331D05E /* AFNetworking.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/AFNetworking/AFNetworking-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		4D0EAF7CBEBA206EF24D76072AFBD1F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 97FFA8256DC00B048CCB7D892331D05E /* AFNetworking.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/AFNetworking/AFNetworking-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		50412A4E5F129B6CDC42AE3E416D03EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E762F23EC34ED4A6FF3312D84E33A40 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		511103F7F15A7E8F83B268EA03462CAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		62FED37B766C9DCAA324F1CEA4EBF886 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B2539DDF065CD3CF915CB71A7E02EF6 /* Stripe.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Stripe/Stripe-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		AA05AF9C3A14EE0E32F42C6E6D42D34F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA05AF9C3A14EE0E32F42C6E6D42D34F /* Debug */,
+				511103F7F15A7E8F83B268EA03462CAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8787D6D5FBEED33B47D22F632FEF8BAF /* Build configuration list for PBXNativeTarget "Stripe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				62FED37B766C9DCAA324F1CEA4EBF886 /* Debug */,
+				2C520ED2CD79D76CDC26E718A029F382 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A903F971702871B72BEA8510BB8CC55A /* Build configuration list for PBXNativeTarget "AFNetworking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D0EAF7CBEBA206EF24D76072AFBD1F4 /* Debug */,
+				4B5E6C07AE23766530F2C004E4FB3D7A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C4F84E6A1B3C30A69A6059DD65DB2AA0 /* Build configuration list for PBXNativeTarget "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50412A4E5F129B6CDC42AE3E416D03EA /* Debug */,
+				067E1C6B7B1B7C71E8A4AE3717DC7BB7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
